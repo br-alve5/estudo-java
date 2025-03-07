@@ -1,4 +1,4 @@
-public class Composta {
+public class CompostaEncadeada {
     public static void main(String[] args) {
         // Exemplo de uma estrutura condicional composta de um resultado escolar.
 
