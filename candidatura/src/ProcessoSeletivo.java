@@ -11,21 +11,24 @@ public class ProcessoSeletivo {
       //  selecaoCandidatos();
       //  imprimirSelecionados();
     }
+
     static void selecaoCandidatos() {
         String [] candidatos = { "FELIPE", "BRUNO", "JORGE", "MATHEUS", "JULIA", "SABRINA", "LUIZ", "ANA", "MIKAEL", "ANDRE"};
 
         int candidatosSelecionados = 0;
         int candidatosAtual=0;
         double salarioBase = 2000.0;
-        while(candidatosSelecionados < 5) {
+
+        while (candidatosSelecionados < 5) {
             String candidato = candidatos[candidatosAtual];
             double salarioPretendido = valorPretendido();
 
             System.out.println("O candidato " + candidato + " solicitou este valor de salario " + salarioPretendido);
-                if(salarioBase >= salarioPretendido) {
+                if (salarioBase >= salarioPretendido) {
                     System.out.println("O candidato " + candidato + " foi selecionado para a vaga.");
                     candidatosSelecionados++;
                 }
+
             candidatosAtual++;
         }
     }
