@@ -44,16 +44,20 @@ public class CarrinhoDeCompras {
     public static void main(String[] args) {
         CarrinhoDeCompras compras = new CarrinhoDeCompras();
 
+        // adiciona item
         compras.adicionarItem("Teclado", 119.90, 1);
         compras.adicionarItem("Mouse", 109, 2);
         compras.adicionarItem("Monitor", 1300, 1);
 
+        // exibe itens
         compras.exibirItens();
-
+        // calcular valor total
         System.out.println("Valor total: " + compras.calcularValorTotal());
 
+        // remove item
         compras.removerItem("Mouse");
 
+        compras.exibirItens();
         System.out.println("Valor total: " + compras.calcularValorTotal());
     }
 }
